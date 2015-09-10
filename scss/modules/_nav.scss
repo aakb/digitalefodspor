@@ -1,0 +1,68 @@
+/**
+ *
+ * Navigation.
+ *
+ */
+
+
+.nav {
+  top: 0;
+  position: fixed;
+
+  height: $nav-height;
+  width: 100%;
+  opacity: .95;
+  z-index: 98;
+
+  background-color: $menu-color;
+
+  @include flexbox;
+
+  &--logo {
+    display: block;
+    height: $nav-height;
+    margin-top: .15em;
+    margin-left: .5em;
+    z-index: -1;
+    
+    color: $white;
+    font-size: 3em;
+
+    @include order(1);
+    @include align-self(center);
+
+    a {
+      @include strip-link-styles(#fff, none);
+    }
+  }
+
+  &--links {
+    text-align: center;
+
+    @include order(2);
+    @include flex-grow(1);
+    @include align-self(center);
+
+    a {
+      @include strip-link-styles(#fff, none);
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &--link {
+    padding-right: 1em;
+
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+  }
+
+  &--menu {
+    background-color: $menu-color;
+
+    @include order(3);
+  }
+}

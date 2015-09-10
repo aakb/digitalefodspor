@@ -1,0 +1,10 @@
+sculpin_content_types:
+    posts:
+        permalink: blog/:year/:month/:day/:filename/
+        type: path
+        path: _posts
+
+    events:
+        permalink: blog/:year/:month/:day/:filename/
+        type: path
+        path: _events

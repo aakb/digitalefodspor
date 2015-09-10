@@ -1,0 +1,27 @@
+---
+layout: frontpage
+title: begivenheder
+headerimage: https://unsplash.it/3200/2400/?random
+generator: pagination
+pagination:
+max_per_page: 4
+use:
+- events
+---
+{% block content_wrapper %}
+
+  <p class="lead">This title is static on the event page</p>
+
+  <div class="itk-boxlist">
+
+    {% for event in page.pagination.items %}
+
+      {% include 'includes/_eventbox.html' ignore missing %}
+
+    {% endfor %}
+
+  </div>
+
+
+
+{% endblock %}
