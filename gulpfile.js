@@ -11,6 +11,7 @@ var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var ngAnnotate = require('gulp-ng-annotate');
 var rename = require('gulp-rename');
+var wait = require('gulp-wait')
 
 /**
  * Setting up browsersync.
@@ -27,6 +28,7 @@ browserSync.init({
 var jsPath = ['./js/*.js', '!./js/*.min.*'];
 var sassPath = './scss/**/*.scss';
 var htmlPath = './*.php'; //could also be twig files
+var sculpingeneratedoutput = './output_dev/**';
 
 var buildDir = './js';
 
@@ -42,7 +44,7 @@ gulp.task('jshint', function() {
 /**
  * Process Sculpin files
  */
-gulp.task('shorthand', shell.task([
+gulp.task('sculpin', shell.task([
   'sculpin generate --watch'
 
 ]))
@@ -61,7 +63,7 @@ gulp.task('sass', function () {
     }).on('error', sass.logError))
     .pipe(sourcemaps.write())
     .pipe(gulp.dest('./source/css'))
-  .pipe(browserSync.stream());
+  //.pipe(browserSync.stream());
 });
 
 /**
@@ -70,9 +72,7 @@ gulp.task('sass', function () {
 gulp.task('watch', function() {
   gulp.watch(jsPath, ['jshint']);
   gulp.watch(sassPath, ['sass']);
-  gulp.start('shorthand');
-  gulp.watch(htmlPath).on('change', browserSync.reload);
-  gulp.watch(jsPath).on('change',browserSync.reload);
+  gulp.watch(sculpingeneratedoutput).on('change', browserSync.reload);
 });
 
 /**
@@ -107,5 +107,5 @@ gulp.task('assetsJs', function () {
 
 // Tasks to compile sass and watch js file.
 
-gulp.task('default', ['sass', 'watch']);
+gulp.task('default', ['sass', 'watch', 'sculpin']);
 gulp.task('build', ['buildJs', 'sass']);
