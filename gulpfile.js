@@ -25,7 +25,7 @@ browserSync.init({
 });
 
 // We only want to process our own non-processed JavaScript files.
-var jsPath = ['source/js/*.js', 'source./js/*.min.*'];
+var jsPath = ['./js/*.js', './js/*.min.*'];
 var sassPath = './scss/**/*.scss';
 var htmlPath = './*.php'; //could also be twig files
 var sculpingeneratedoutput = './output_dev/**';
@@ -43,12 +43,12 @@ gulp.task('jshint', function() {
 
 /**
  * Process Sculpin files
- */
+ *
 gulp.task('sculpin', shell.task([
-  'sculpin generate --watch'
+  'sculpin generate'
 
 ]))
-
+ */
 /**
  * Process SCSS using libsass
  */
@@ -63,7 +63,8 @@ gulp.task('sass', function () {
     }).on('error', sass.logError))
     .pipe(sourcemaps.write())
     .pipe(gulp.dest('./source/css'))
-  //.pipe(browserSync.stream());
+  .pipe(browserSync.stream());
+  //gulp.start('sculpin');
 });
 
 /**
@@ -104,8 +105,7 @@ gulp.task('assetsJs', function () {
     .pipe(gulp.dest(buildDir))
 });
 
-
 // Tasks to compile sass and watch js file.
 
-gulp.task('default', ['sass', 'watch', 'sculpin']);
+gulp.task('default', ['sass', 'watch']);
 gulp.task('build', ['buildJs', 'sass']);

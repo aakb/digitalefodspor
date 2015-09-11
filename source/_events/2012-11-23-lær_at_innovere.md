@@ -1,13 +1,13 @@
 ---
-title: Begivenhed
+title: Lær at innovere
 headerimage: https://unsplash.it/3200/2400/?random
 image: https://unsplash.it/200/200/?random
-startdate: 12/12/2012
-enddate: 12/12/2012
-starttime: 13:00
-endtime: 15:00
-location: et hemmeligt sted
-type: balbablalbalbalblalbb
+startdate: 12/01/2013
+enddate: 12/01/2013
+starttime: 12:00
+endtime: 16:00
+location: her
+type: Vi lærer dig alle værktøjerne
 tags:
     - sculpin
     - markdown

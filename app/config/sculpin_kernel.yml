@@ -1,10 +1,14 @@
 sculpin_content_types:
-    posts:
+    post:
         permalink: blog/:year/:month/:day/:filename/
         type: path
         path: _posts
-
     events:
         permalink: blog/:year/:month/:day/:filename/
         type: path
         path: _events
+        singular_name: event
+        layout: event
+        enabled: true
+        taxonomies:
+            - tags
