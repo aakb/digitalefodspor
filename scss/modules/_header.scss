@@ -6,22 +6,23 @@
 
 
 .header {
+  height: 100%;
   width: 100%;
 
-  //background: url('../images/header-background.jpg') no-repeat left;
-  //background: url('https://unsplash.it/3200/2400/?random') no-repeat left;
+  background: url('../images/header-mobile.jpg') no-repeat;
+  background-size: cover;
   color: #fff;
 
-  &--image{
+  &--image {
    position: absolute;
-   z-index: -5;
-
   }
   // Header inner
   &--inner {
     box-sizing: border-box;
     height: 100%;
-    padding: 4.5em 1.5em 1.5em;
+    max-width: $layout-max-width;
+    margin-right: auto;
+    margin-left: auto;
 
     @include flexbox;
     @include flex-direction(column);
@@ -29,19 +30,16 @@
   }
 
   &--big,
-  &--sub,
-  &--button {
+  &--lead,
+  &--sub {
     text-shadow: 2px 2px 0 transparentize(#000, .5);
   }
 
-  // Big header
   &--big {
-    margin-top: 0;
-    padding-top: 1em;
+    margin-top: -.5em; // Compensate for font height
 
     font-size: 2em;
     font-weight: 600;
-    text-align: center;
 
     @include breakpoint($breakpoint-lap) {
       margin-bottom: .25em;
@@ -50,60 +48,25 @@
     }
   }
 
-  // Sub header
-  &--sub {
+  &--lead {
     margin-bottom: 2em;
 
     font-weight: 300;
-    text-align: center;
 
     @include breakpoint($breakpoint-lap) {
       margin-bottom: .5em;
 
-      font-size: 3em;
+      font-size: 2em;
     }
   }
 
-  // Link button
-  &--button {
-    &-wrapper {
-      text-align: center;
-    }
+  &--sub {
+    margin-bottom: 2em;
 
-    &-link {
-      border: 2px solid $white;
-      border-radius: 10px;
-      box-sizing: border-box;
-      display: block;
-      margin-right: auto;
-      margin-left: auto;
-      margin-bottom: 2em;
-      max-width: 12em;
-      padding-top: .25em;
-      padding-bottom: .25em;
-      width: 75%;
+    @include breakpoint($breakpoint-lap) {
+      margin-bottom: .5em;
 
-      background-color: transparentize($black, .65);
-      color: $white;
-      font-weight: 600;
-      text-align: center;
-      text-decoration: none;
-
-      &:link,
-      &:visited,
-      &:hover,
-      &:active {
-        color: #fff;
-        text-decoration: none;
-      }
-
-      &:hover {
-        background-color: transparentize($black, .35);
-      }
-
-      @include breakpoint($breakpoint-lap) {
-        font-size: 2.5em;
-      }
+      font-size: 1.25em;
     }
   }
 }

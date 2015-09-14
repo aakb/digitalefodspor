@@ -1,96 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>{% block title %}{{ page.title }}{% endblock %} &mdash; {{ site.title }} &mdash; {{ site.subtitle }}</title>
-    <meta charset="utf-8">
+  <title>{% block title %}{{ page.title }}{% endblock %} &mdash; {{ site.title }} &mdash; {{ site.subtitle }}</title>
+  <meta charset="utf-8">
 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="{{ site.url }}/css/styles.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet" type="text/css">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="{{ site.url }}/components/menu-toggle.js"></script>
-
-    {% block head_styles %}
-    {% endblock %}
-    {% block head_scripts %}
-    {% endblock %}
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="{{ site.url }}/css/styles.css" rel="stylesheet" type="text/css">
+  <link href="//fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet" type="text/css">
 </head>
 <body>
-<div class="overlay js-menu-toggle"></div>
-<header class="banner">
-    <nav class="nav">
 
-        <div class="nav--logo"><a  href="{{ site.url }}/">{{ site.title }}</a></div>
-        <div class="nav--links">
-            <a href="{{ site.url }}/nyheder" class="nav--link">Nyheder</a>
-            <a href="{{ site.url }}/begivenheder" class="nav--link">Begivenheder</a>
-            <a href="{{ site.url }}/blog/tags" class="nav--link">Tags</a>
-            <a href="{{ site.url }}/om" class="nav--link">Om</a>
-        </div>
-        <button class="nav--menu c-hamburger js-menu-toggle">
-            <span>toggle menu</span>
-        </button>
-    </nav>
-    <nav class="hamburger-menu">
-        <button class="c-hamburger c-hamburger--htx js-menu-toggle">
-            <span>toggle menu</span>
-        </button>
-        <div class="hamburger-menu--links">
-            <a href="{{ site.url }}/menupunkt1" class="hamburger-menu--link">Nyheder</a>
-            <a href="{{ site.url }}/begivenheder" class="hamburger-menu--link">Begivenheder</a>
-            <a href="{{ site.url }}/blog/tags" class="hamburger-menu--link">Tags</a>
-            <a href="{{ site.url }}/om" class="hamburger-menu--link">Om</a>
-        </div>
-    </nav>
+<header class="header" role="banner" id="home">
+  <div class="header--inner">
+    <h1 class="header--big">Digitale Fodspor</h1>
+    <p class="header--lead">Hvor peger dine digitale fodspor hen? Hvem kan se hvad du laver på nettet?</p>
+    <p class="header--sub">Det går stærkt online, bliv klogere på hvad det koster at bruge gratis services som Facebook, Twitter, LinkedIn og Instagram.</p>
+  </div>
 </header>
 
-
-    <div class="header" role="banner" id="home" style="background: url('{{ page.headerimage }}') no-repeat left;">
-        <div class="header--inner">
-            <h1 class="header--big">{{ page.title }}</h1>
-            {% if page.subtitle %}
-                <p class="header--sub">{{ page.subtitle }}</p>
-            {% endif %}
-            {% if page.buttontext %}
-                <div class="header--button-wrapper"><a href="#" class="header--button-link" data-scroll>{{ page.buttontext }}</a></div>
-            {% endif %}
-        </div>
-    </div>
-
-
-<main role="main">
-    <div class="content">
-
-            {% block content_wrapper %}{% block content %}{% endblock %}{% endblock %}
-    </div>
-</main>
-<footer class="container">
-    &copy; {{ "now"|date("Y") }} {{ site.title }}
-</footer>
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="{{ site.url }}/components/jquery/jquery.min.js"><\/script>')</script>
-<script src="{{ site.url }}/components/bootstrap/js/bootstrap.min.js"></script>
-{% block scripts %}
-{% endblock %}
-
-{% if site.google_analytics_tracking_id %}
-
-<script type="text/javascript">
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-    ga('create', '{{site.google_analytics_tracking_id}}', 'auto');
-    ga('send', 'pageview');
-</script>
-{% endif %}
-<script src="{{ site.url }}/components/highlightjs/highlight.pack.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
-
-{% block scripts_after %}
-{% endblock %}
 </body>
 </html>
