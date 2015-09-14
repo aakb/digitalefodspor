@@ -28,7 +28,7 @@ browserSync.init({
 var jsPath = ['./js/*.js', './js/*.min.*'];
 var sassPath = './scss/**/*.scss';
 var htmlPath = './*.php'; //could also be twig files
-var sculpingeneratedoutput = './output_dev/**';
+var outputPath = './output_dev';
 
 var buildDir = './js';
 
@@ -62,7 +62,7 @@ gulp.task('sass', function () {
       ]
     }).on('error', sass.logError))
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest('./source/css'))
+    .pipe(gulp.dest(outputPath + '/css'))
   .pipe(browserSync.stream());
   //gulp.start('sculpin');
 });
@@ -73,7 +73,7 @@ gulp.task('sass', function () {
 gulp.task('watch', function() {
   gulp.watch(jsPath, ['jshint']);
   gulp.watch(sassPath, ['sass']);
-  gulp.watch(sculpingeneratedoutput).on('change', browserSync.reload);
+  gulp.watch(outputPath + '/**').on('change', browserSync.reload);
 });
 
 /**
