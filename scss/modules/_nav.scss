@@ -12,7 +12,6 @@
   height: $nav-height;
   width: 100%;
   opacity: .95;
-  z-index: 98;
 
   background-color: $menu-color;
 
@@ -24,7 +23,7 @@
     margin-top: .15em;
     margin-left: .5em;
     z-index: -1;
-    
+
     color: $white;
     font-size: 3em;
 
