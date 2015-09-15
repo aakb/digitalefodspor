@@ -1,18 +1,3 @@
 # https://sculpin.io/documentation/configuration/
 sculpin:
     ignore: [ 'css/' ]
-
-sculpin_content_types:
-    post:
-        permalink: blog/:year/:month/:day/:filename/
-        type: path
-        path: _posts
-    events:
-        permalink: blog/:year/:month/:day/:filename/
-        type: path
-        path: _events
-        singular_name: event
-        layout: event
-        enabled: true
-        taxonomies:
-            - tags
