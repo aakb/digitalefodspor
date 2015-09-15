@@ -6,8 +6,10 @@ startdate: 12/01/2013
 enddate: 12/01/2013
 starttime: 12:00
 endtime: 16:00
-location: her
+location: DOKK1
 type: Vi lærer dig alle værktøjerne
+host: Center for innovation i Aarhus
+price: gratis
 tags:
     - sculpin
     - markdown

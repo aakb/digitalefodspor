@@ -1,10 +1,9 @@
 ---
 title: Syntax Highlighting
-subtitle: This is a subtitle
-buttontext: look at me
 headerimage: https://unsplash.it/3200/2400/?random
 image: https://unsplash.it/200/200/?random
 type: balbablalbalbalblalbb
+date: 0204-2013
 categories:
     - features
 
