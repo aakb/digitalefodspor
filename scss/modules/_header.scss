@@ -25,6 +25,7 @@
     margin-left: auto;
 
     @include flexbox;
+    @include align-items(center);
     @include flex-direction(column);
     @include justify-content(center);
   }
@@ -33,6 +34,8 @@
   &--lead,
   &--sub {
     text-shadow: 2px 2px 0 transparentize(#000, .5);
+
+    @include align-self(flex-start);
   }
 
   &--big {
@@ -64,9 +67,56 @@
     margin-bottom: 2em;
 
     @include breakpoint($breakpoint-lap) {
-      margin-bottom: .5em;
+      margin-bottom: 1.75em;
 
       font-size: 1.25em;
     }
   }
+
+  &--arrow {
+    position: relative;
+
+    width: 7em;
+
+    transform: rotate(-90deg);
+  }
 }
+
+.svg-circle {
+  height: 7em;
+  width: 7em;
+
+  transform: rotate(180deg);
+
+  #circle1 {
+    fill: transparent;
+    stroke: white;
+    stroke-width: 5;
+  }
+
+  #circle2 {
+    fill: transparent;
+    stroke: transparent;
+    stroke-width: 5;
+    stroke-dasharray: 0 3140;
+
+    transition: stroke-dasharray 2s;
+  }
+
+  polygon {
+    fill: $white;
+  }
+
+  &:hover {
+    #circle2 {
+      stroke-dasharray: 3140 3140;
+      stroke: $link-color;
+    }
+
+    polygon {
+      fill: $link-color;
+    }
+  }
+}
+
+
