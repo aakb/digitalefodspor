@@ -82,25 +82,25 @@
   }
 }
 
-.svg-circle {
+.circle-arrow {
   height: 7em;
   width: 7em;
 
   transform: rotate(180deg);
 
-  #circle1 {
+  #circle {
     fill: transparent;
     stroke: white;
     stroke-width: 5;
   }
 
-  #circle2 {
+  #hover-circle {
     fill: transparent;
     stroke: transparent;
     stroke-width: 5;
     stroke-dasharray: 0 3140;
 
-    transition: stroke-dasharray 2s;
+    transition: stroke-dasharray 5s;
   }
 
   polygon {
@@ -108,7 +108,7 @@
   }
 
   &:hover {
-    #circle2 {
+    #hover-circle {
       stroke-dasharray: 3140 3140;
       stroke: $link-color;
     }
