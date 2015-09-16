@@ -1,4 +1,45 @@
 ---
 layout: frontpage
 title: Digitale Fodspor
+generator: pagination
+pagination:
+use:
+ - posts
 ---
+
+			<header id="header" class="codrops-header">
+				<h1>Draggable Dual-View Slideshow</h1>
+				<span class="message">This mobile version does not have the slideshow switch</span>
+				<button class="slider-switch">Switch view</button>
+			</header>
+			<div id="overlay" class="overlay">
+				<div class="info">
+					<h2>Demo interactions</h2>
+					<span class="info-drag">Drag Sliders</span>
+					<span class="info-keys">Use Arrows</span>
+					<span class="info-switch">Switch view</span>
+					<button>Got it!</button>
+				</div>
+			</div>
+      <div id="slideshow" class="dragslider">
+      <section class="img-dragger img-dragger-large dragdealer">
+        	<div class="handle">
+
+{% set counter = 1 %}
+{% for post in page.pagination.items %}
+
+		{% include 'includes/_headerview.html.twig' ignore missing %}
+		{% set counter = counter + 1 %}
+
+    {% endfor %}
+      </div>
+    </section>
+    <section class="pages">
+			{% set counter = 1 %}
+  {% for post in page.pagination.items %}
+    {% include 'includes/_subview.html.twig' ignore missing %}
+		{% set counter = counter + 1 %}
+  {% endfor %}
+
+  </section>
+  </div>

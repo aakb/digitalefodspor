@@ -5,13 +5,11 @@ var gulp = require('gulp');
 var jshint = require('gulp-jshint');
 var stylish = require('jshint-stylish');
 var sass = require('gulp-sass');
-var shell = require('gulp-shell');
 var sourcemaps = require('gulp-sourcemaps');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var ngAnnotate = require('gulp-ng-annotate');
 var rename = require('gulp-rename');
-var wait = require('gulp-wait')
 
 /**
  * Setting up browsersync.
@@ -41,14 +39,6 @@ gulp.task('jshint', function() {
     .pipe(jshint.reporter(stylish));
 });
 
-/**
- * Process Sculpin files
- *
-gulp.task('sculpin', shell.task([
-  'sculpin generate'
-
-]))
- */
 /**
  * Process SCSS using libsass
  */

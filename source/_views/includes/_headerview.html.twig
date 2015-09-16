@@ -1,0 +1,10 @@
+<div class="slide" data-content="content-{{ counter }}">
+{% if post.youtube %}
+  <iframe class="video" width="560" height="315" src="{{ post.youtube }}" frameborder="0" allowfullscreen></iframe>
+{% endif %}
+<div class="img-wrap"><img src="{{ post.backgroundimage }}" alt="img1"/></div>
+
+
+<h2>{{ post.headermain }}<span>{{ post.headerlead }}</span></h2>
+<button class="content-switch">Read more</button>
+</div>
