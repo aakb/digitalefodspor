@@ -4,6 +4,6 @@
 
 sculpin_content_types:
     post:
-        permalink: blog/:year/:month/:day/:filename/
+        permalink: pretty
         type: path
         path: _posts
