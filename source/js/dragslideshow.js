@@ -4,14 +4,14 @@
  *
  * Licensed under the MIT license.
  * http://www.opensource.org/licenses/mit-license.php
- * 
+ *
  * Copyright 2014, Codrops
  * http://www.codrops.com
  */
 ;( function( window ) {
-	
+
 	'use strict';
-	
+
 	var docElem = window.document.documentElement,
 		transEndEventNames = {
 			'WebkitTransition': 'webkitTransitionEnd',
@@ -37,7 +37,7 @@
 			client = docElem['clientHeight'];
 			inner = window['innerHeight'];
 		}
-		
+
 		return client < inner ? inner : client;
 	}
 
@@ -45,7 +45,7 @@
 	 * extend obj function
 	 */
 	function extend( a, b ) {
-		for( var key in b ) { 
+		for( var key in b ) {
 			if( b.hasOwnProperty( key ) ) {
 				a[key] = b[key];
 			}
@@ -56,7 +56,7 @@
 	/**
 	 * DragSlideshow function
 	 */
-	function DragSlideshow( el, options ) {	
+	function DragSlideshow( el, options ) {
 		this.el = el;
 		this.options = extend( {}, this.options );
 		extend( this.options, options );
@@ -86,19 +86,19 @@
 
 		// status
 		this.isFullscreen = true;
-		
+
 		// the images wrapper element
 		this.imgDragger = this.el.querySelector( 'section.dragdealer' );
-		
+
 		// the moving element inside the images wrapper
 		this.handle = this.imgDragger.querySelector( 'div.handle' );
-		
+
 		// the slides
 		this.slides = [].slice.call( this.handle.children );
-		
+
 		// total number of slides
 		this.slidesCount = this.slides.length;
-		
+
 		if( this.slidesCount < 1 ) return;
 
 		// cache options slideshowRatio (needed for window resize)
@@ -106,18 +106,18 @@
 
 		// add class "current" to first slide
 		classie.add( this.slides[ this.current ], 'current' );
-		
+
 		// the pages/content
 		this.pages = this.el.querySelector( 'section.pages' );
 
 		// set the width of the handle : total slides * 100%
 		this.handle.style.width = this.slidesCount * 100 + '%';
-		
+
 		// set the width of each slide to 100%/total slides
 		this.slides.forEach( function( slide ) {
 			slide.style.width = 100 / self.slidesCount + '%';
 		} );
-		
+
 		// initialize the DragDealer plugin
 		this._initDragDealer();
 
@@ -130,12 +130,12 @@
 	 */
 	DragSlideshow.prototype._initEvents = function() {
 		var self = this;
-		
+
 		this.slides.forEach( function( slide ) {
 			// clicking the slides when not in isFullscreen mode
 			slide.addEventListener( 'click', function() {
 				if( self.isFullscreen || self.dd.activity || self.isAnimating ) return false;
-				
+
 				if( self.slides.indexOf( slide ) === self.current ) {
 					self.toggle();
 				}
@@ -188,7 +188,7 @@
 	 * gets the content page of the current slide
 	 */
 	DragSlideshow.prototype._getContentPage = function( slide ) {
-		return this.pages.querySelector( 'div.content[data-content = "' + slide.getAttribute( 'data-content' ) + '"]' );
+		return this.pages.querySelector( "div.content[data-content = '" + slide.getAttribute( 'data-content' ) + "']" );
 	}
 
 	/**
@@ -205,7 +205,7 @@
 
 		// get page
 		var page = this._getContentPage( slide );
-		
+
 		if( this.isContent ) {
 			// enable the dragdealer
 			this.dd.enable();
@@ -216,7 +216,7 @@
 			page.scrollTop = 0;
 			// disable the dragdealer
 			this.dd.disable();
-			classie.add( this.el, 'show-content' );	
+			classie.add( this.el, 'show-content' );
 			classie.add( page, 'show' );
 		}
 
@@ -227,7 +227,7 @@
 					this.removeEventListener( transEndEventName, onEndTransitionFn );
 				}
 				if( self.isContent ) {
-					classie.remove( page, 'show' );	
+					classie.remove( page, 'show' );
 				}
 				self.isContent = !self.isContent;
 				self.isAnimating = false;
@@ -280,13 +280,13 @@
 
 		// add preserve-3d to the slides (seems to fix a rendering problem in firefox)
 		this._preserve3dSlides( true );
-		
+
 		// callback
 		this.options.onToggle();
 
 		classie.remove( this.el, this.isFullscreen ? 'switch-max' : 'switch-min' );
 		classie.add( this.el, this.isFullscreen ? 'switch-min' : 'switch-max' );
-		
+
 		var self = this,
 			p = this.options.perspective,
 			r = this.options.slideshowRatio,
@@ -320,7 +320,7 @@
 
 			// change status
 			self.isFullscreen = !self.isFullscreen;
-			
+
 			self.isAnimating = false;
 		};
 

@@ -17,17 +17,6 @@ body,
 	height: 100%;
 }
 
-.video {
-	margin: 0;
-	position: absolute;
-
-	top: 50%;
-	left: 50%;
-	margin-right: 0;
-	-webkit-transform: translate(-50%, -50%);
-	z-index: 1000000;
-}
-
 html.js,
 .js body {
 	overflow: hidden;
