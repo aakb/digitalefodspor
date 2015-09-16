@@ -1,0 +1,32 @@
+/**
+ *
+ * Content.
+ *
+ */
+
+.content {
+  article {
+    @include flexbox;
+  }
+
+  &--header {
+
+  }
+
+  &--lead {
+    font-weight: 400;
+  }
+
+  &--text {
+
+  }
+
+  &--button {
+    display: block;
+    padding: 1em 2em;
+
+    background-color: $black;
+    color: $link-color;
+    text-align: center;
+  }
+}
