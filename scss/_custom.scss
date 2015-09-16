@@ -11,3 +11,23 @@
 
   fill: #fff;
 }
+
+
+// Font overrides.
+
+$font-regular:    "permianseriftypefaceregular";
+$font-bold:       "permianseriftypefacebold";
+
+body {
+  font: 1em/1.5 $font-regular, "Helvetica Neue", Helvetica, Arial, serif;
+}
+
+.dragslider h2,
+.dragslider h2 span {
+  font-family: $font-regular;
+}
+
+
+.dragslider h2 span {
+  padding-top: 1em;
+}
