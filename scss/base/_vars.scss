@@ -34,9 +34,9 @@ $nav-height:  80px;
 
 $black:            #000;
 $white:            #fff;
-$menu-color:       dimgray;
-$link-color:       #ffd400;
-$link-color-hover: lighten(#ffd400, 10%);
+$primary-color:    #ffd400;
+$link-color:       $primary-color;
+$link-color-hover: lighten($primary-color, 10%);
 $grey-border:      #D8D8D8;
 
 
