@@ -1,32 +1,32 @@
 /**
- * dragslideshow.js v1.0.0
- * http://www.codrops.com
- *
- * Licensed under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- *
- * Copyright 2014, Codrops
- * http://www.codrops.com
- */
+* dragslideshow.js v1.0.0
+* http://www.codrops.com
+*
+* Licensed under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+*
+* Copyright 2014, Codrops
+* http://www.codrops.com
+*/
 ;( function( window ) {
 
 	'use strict';
 
 	var docElem = window.document.documentElement,
-		transEndEventNames = {
-			'WebkitTransition': 'webkitTransitionEnd',
-			'MozTransition': 'transitionend',
-			'OTransition': 'oTransitionEnd',
-			'msTransition': 'MSTransitionEnd',
-			'transition': 'transitionend'
-		},
-		transEndEventName = transEndEventNames[ Modernizr.prefixed( 'transition' ) ],
-		support = { transitions : Modernizr.csstransitions };
+	transEndEventNames = {
+		'WebkitTransition': 'webkitTransitionEnd',
+		'MozTransition': 'transitionend',
+		'OTransition': 'oTransitionEnd',
+		'msTransition': 'MSTransitionEnd',
+		'transition': 'transitionend'
+	},
+	transEndEventName = transEndEventNames[ Modernizr.prefixed( 'transition' ) ],
+	support = { transitions : Modernizr.csstransitions };
 
 	/**
-	 * gets the viewport width and height
-	 * based on http://responsejs.com/labs/dimensions/
-	 */
+	* gets the viewport width and height
+	* based on http://responsejs.com/labs/dimensions/
+	*/
 	function getViewport( axis ) {
 		var client, inner;
 		if( axis === 'x' ) {
@@ -42,8 +42,8 @@
 	}
 
 	/**
-	 * extend obj function
-	 */
+	* extend obj function
+	*/
 	function extend( a, b ) {
 		for( var key in b ) {
 			if( b.hasOwnProperty( key ) ) {
@@ -54,8 +54,8 @@
 	}
 
 	/**
-	 * DragSlideshow function
-	 */
+	* DragSlideshow function
+	*/
 	function DragSlideshow( el, options ) {
 		this.el = el;
 		this.options = extend( {}, this.options );
@@ -64,8 +64,8 @@
 	}
 
 	/**
-	 * DragSlideshow options
-	 */
+	* DragSlideshow options
+	*/
 	DragSlideshow.prototype.options = {
 		perspective : '1200',
 		slideshowRatio : 0.3, // between: 0,1
@@ -75,9 +75,9 @@
 	}
 
 	/**
-	 * init function
-	 * initialize and cache some vars
-	 */
+	* init function
+	* initialize and cache some vars
+	*/
 	DragSlideshow.prototype._init = function() {
 		var self = this;
 
@@ -126,8 +126,8 @@
 	}
 
 	/**
-	 * initialize the events
-	 */
+	* initialize the events
+	*/
 	DragSlideshow.prototype._initEvents = function() {
 		var self = this;
 
@@ -151,49 +151,58 @@
 		// keyboard navigation events
 		document.addEventListener( 'keydown', function( ev ) {
 			var keyCode = ev.keyCode || ev.which,
-				currentSlide = self.slides[ self.current ];
+			currentSlide = self.slides[ self.current ];
 
 			if( self.isContent ) {
 				switch (keyCode) {
 					// up key
 					case 38:
-						// only if current scroll is 0:
-						if( self._getContentPage( currentSlide ).scrollTop === 0 ) {
-							self._toggleContent( currentSlide );
-						}
-						break;
+					// only if current scroll is 0:
+					if( self._getContentPage( currentSlide ).scrollTop === 0 ) {
+						self._toggleContent( currentSlide );
+					}
+					break;
 				}
 			}
 			else {
 				switch (keyCode) {
 					// down key
 					case 40:
-						// if not fullscreen don't reveal the content. If you want to navigate directly to the content then remove this check.
-						if( !self.isFullscreen ) return;
-						self._toggleContent( currentSlide );
-						break;
+					// if not fullscreen don't reveal the content. If you want to navigate directly to the content then remove this check.
+					if( !self.isFullscreen ) return;
+					self._toggleContent( currentSlide );
+					break;
 					// right and left keys
 					case 37:
-						self.dd.setStep( self.current );
-						break;
+					self.dd.setStep( self.current );
+					break;
 					case 39:
-						self.dd.setStep( self.current + 2 );
-						break;
+					self.dd.setStep( self.current + 2 );
+					break;
 				}
 			}
 		} );
+		//right and left button
+		$( ".rightbutton" ).bind( "click", function() {
+			self.dd.setStep( self.current + 2);
+		});
+
+		$( ".leftbutton" ).bind( "click", function() {
+			self.dd.setStep( self.current );
+		});
+
 	}
 
 	/**
-	 * gets the content page of the current slide
-	 */
+	* gets the content page of the current slide
+	*/
 	DragSlideshow.prototype._getContentPage = function( slide ) {
 		return this.pages.querySelector( "div.content[data-content = '" + slide.getAttribute( 'data-content' ) + "']" );
 	}
 
 	/**
-	 * show/hide content
-	 */
+	* show/hide content
+	*/
 	DragSlideshow.prototype._toggleContent = function( slide ) {
 		if( this.isAnimating ) {
 			return false;
@@ -221,19 +230,19 @@
 		}
 
 		var self = this,
-			onEndTransitionFn = function( ev ) {
-				if( support.transitions ) {
-					if( ev.propertyName.indexOf( 'transform' ) === -1 || ev.target !== this ) return;
-					this.removeEventListener( transEndEventName, onEndTransitionFn );
-				}
-				if( self.isContent ) {
-					classie.remove( page, 'show' );
-				}
-				self.isContent = !self.isContent;
-				self.isAnimating = false;
-				// callback
-				self.options.onToggleContentComplete();
-			};
+		onEndTransitionFn = function( ev ) {
+			if( support.transitions ) {
+				if( ev.propertyName.indexOf( 'transform' ) === -1 || ev.target !== this ) return;
+				this.removeEventListener( transEndEventName, onEndTransitionFn );
+			}
+			if( self.isContent ) {
+				classie.remove( page, 'show' );
+			}
+			self.isContent = !self.isContent;
+			self.isAnimating = false;
+			// callback
+			self.options.onToggleContentComplete();
+		};
 
 		if( support.transitions ) {
 			this.el.addEventListener( transEndEventName, onEndTransitionFn );
@@ -244,8 +253,8 @@
 	}
 
 	/**
-	 * initialize the Dragdealer plugin
-	 */
+	* initialize the Dragdealer plugin
+	*/
 	DragSlideshow.prototype._initDragDealer = function() {
 		var self = this;
 		this.dd = new Dragdealer( this.imgDragger, {
@@ -260,8 +269,8 @@
 	}
 
 	/**
-	 * DragDealer plugin callback: update current value
-	 */
+	* DragDealer plugin callback: update current value
+	*/
 	DragSlideshow.prototype._navigate = function( x, y ) {
 		// add class "current" to the current slide / remove that same class from the old current slide
 		classie.remove( this.slides[ this.current || 0 ], 'current' );
@@ -270,8 +279,8 @@
 	}
 
 	/**
-	 * toggle between fullscreen and minimized slideshow
-	 */
+	* toggle between fullscreen and minimized slideshow
+	*/
 	DragSlideshow.prototype.toggle = function() {
 		if( this.isAnimating ) {
 			return false;
@@ -288,9 +297,9 @@
 		classie.add( this.el, this.isFullscreen ? 'switch-min' : 'switch-max' );
 
 		var self = this,
-			p = this.options.perspective,
-			r = this.options.slideshowRatio,
-			zAxisVal = this.isFullscreen ? p - ( p / r ) : p - p * r;
+		p = this.options.perspective,
+		r = this.options.slideshowRatio,
+		zAxisVal = this.isFullscreen ? p - ( p / r ) : p - p * r;
 
 		this.imgDragger.style.WebkitTransform = 'perspective(' + this.options.perspective + 'px) translate3d( -50%, -50%, ' + zAxisVal + 'px )';
 		this.imgDragger.style.transform = 'perspective(' + this.options.perspective + 'px) translate3d( -50%, -50%, ' + zAxisVal + 'px )';
@@ -333,8 +342,8 @@
 	}
 
 	/**
-	 * add/remove preserve-3d to the slides (seems to fix a rendering problem in firefox)
-	 */
+	* add/remove preserve-3d to the slides (seems to fix a rendering problem in firefox)
+	*/
 	DragSlideshow.prototype._preserve3dSlides = function( add ) {
 		this.slides.forEach( function( slide ) {
 			slide.style.transformStyle = add ? 'preserve-3d' : '';
@@ -342,8 +351,8 @@
 	}
 
 	/**
-	 * add to global namespace
-	 */
+	* add to global namespace
+	*/
 	window.DragSlideshow = DragSlideshow;
 
 } )( window );
