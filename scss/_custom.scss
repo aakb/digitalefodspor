@@ -25,7 +25,7 @@ body {
 .logo {
   width: 300px;
 
-  fill: $primary-color;
+  fill: #fff;
 }
 
 button.content-switch {
@@ -45,7 +45,7 @@ button.content-switch:hover {
 }
 
 button.content-switch::before {
-  font-size: 2.5em;
+  font-size: 4em;
   line-height: .35;
 }
 
@@ -76,7 +76,7 @@ button.content-switch::before {
 }
 
 .img-dragger-small .slide h2 {
-  color: $white;
+  color: rgb(193, 193, 193);
 }
 
 
@@ -84,34 +84,23 @@ button.header-switch {
 
   position: absolute;
   top: 50%;
+  width: 75px;
+  height: 75px;
   z-index: 999;
 
   border: 2px solid #fff;
   color: #fff;
   background: transparent;
-  width: 75px;
-  height: 75px;
   line-height: 0;
   border-radius: 100%;
   -webkit-font-smoothing: antialiased;
   overflow: hidden;
-  padding: 1em 2em;
   font-size: 0.85em;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 400;
-  //outline: none;
-  //text-align: center;
-  //align-items: flex-start;
-  //text-rendering: auto;
-  //display: inline-block;
-  -webkit-writing-mode: horizontal-tb;
   text-indent: 50em;
 
   &.left-button {
     left: 2em;
      -webkit-transform: rotate(90deg);
-
   }
   &.right-button {
     right: 2em;
