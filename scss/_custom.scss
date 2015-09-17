@@ -79,24 +79,66 @@ button.content-switch::before {
   color: $white;
 }
 
+
 button.header-switch {
+
   position: absolute;
   top: 50%;
   z-index: 999;
 
-  &.leftbutton {
+  border: 2px solid #fff;
+  color: #fff;
+  background: transparent;
+  width: 75px;
+  height: 75px;
+  line-height: 0;
+  border-radius: 100%;
+  -webkit-font-smoothing: antialiased;
+  overflow: hidden;
+  padding: 1em 2em;
+  font-size: 0.85em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  //outline: none;
+  //text-align: center;
+  //align-items: flex-start;
+  //text-rendering: auto;
+  //display: inline-block;
+  -webkit-writing-mode: horizontal-tb;
+  text-indent: 50em;
+
+  &.left-button {
     left: 2em;
+     -webkit-transform: rotate(90deg);
+
   }
-  &.rightbutton {
+  &.right-button {
     right: 2em;
+    -webkit-transform: rotate(-90deg);
   }
+}
+
+button.header-switch::before {
+
+  content: "\e097";
+  font-family: "feathericons";
+  speak: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-size: 4em;
+  font-weight: 400;
+  left: 0;
+  text-indent: 0;
+    -webkit-font-smoothing: antialiased;
+
 }
 
 // Hide left and right links when using menu
 
 .switch-min {
-  .content-switch.left,
-  .content-switch.right {
+  .header-switch {
     display: none;
   }
 }
