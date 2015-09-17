@@ -22,8 +22,7 @@ body {
 
 
 .logo {
-  min-width: 300px;
-  max-width: 400px;
+  width: 300px;
 
   fill: #fff;
 }
@@ -69,4 +68,8 @@ button.content-switch::before {
   content: "";
 
   background-color: rgba(60, 60, 60, .6);
+}
+
+.img-dragger-small .slide h2 {
+  color: $white;
 }
