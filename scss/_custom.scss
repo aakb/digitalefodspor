@@ -75,11 +75,11 @@ button.content-switch::before {
   color: $white;
 }
 
-a.content-switch {
-  z-index: 999;
+button.header-switch {
   position: absolute;
   top: 50%;
-  
+  z-index: 999;
+
   &.left {
     left: 2em;
   }
