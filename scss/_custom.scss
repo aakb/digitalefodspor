@@ -87,3 +87,12 @@ a.content-switch {
     right: 2em;
   }
 }
+
+// Hide left and right links when using menu
+
+.switch-min {
+  .content-switch.left,
+  .content-switch.right {
+    display: none;
+  }
+}
