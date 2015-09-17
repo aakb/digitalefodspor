@@ -1,5 +1,5 @@
 ---
-backgroundimage: https://unsplash.it/3101/3101/?random
+backgroundimage: https://unsplash.it/1280/851/?random
 headermain: Hvor
 headerlead: Hvor finder jeg mere om digitale fodspor
 headersub: @TODO mangler indhold
