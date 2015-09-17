@@ -1,6 +1,6 @@
 /**
- * Created by jakobrindom on 28/08/15.
- */
+* Created by jakobrindom on 28/08/15.
+*/
 
 $(document).ready(function () {
   "use strict";
@@ -43,5 +43,3 @@ $(document).ready(function () {
     }
   });
 });
-
-
