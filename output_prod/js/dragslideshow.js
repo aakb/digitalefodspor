@@ -183,11 +183,11 @@
 			}
 		} );
 		//right and left button
-		$( ".rightbutton" ).bind( "click", function() {
+		$( ".right-button" ).bind( "click", function() {
 			self.dd.setStep( self.current + 2);
 		});
 
-		$( ".leftbutton" ).bind( "click", function() {
+		$( ".left-button" ).bind( "click", function() {
 			self.dd.setStep( self.current );
 		});
 
