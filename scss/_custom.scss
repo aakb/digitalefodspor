@@ -53,17 +53,6 @@ button.content-switch::before {
   padding-top: 1em;
 }
 
-a.content-switch {
-
-  &.left {
-    z-index: 9999999;
-    left: 0;
-  }
-  &.right {
-    z-index: 9999999;
-    right: 0;
-  }
-}
 
 .img-wrap img {
   opacity: 1;
@@ -84,4 +73,17 @@ a.content-switch {
 
 .img-dragger-small .slide h2 {
   color: $white;
+}
+
+a.content-switch {
+  z-index: 999;
+  position: absolute;
+  top: 50%;
+  
+  &.left {
+    left: 2em;
+  }
+  &.right {
+    right: 2em;
+  }
 }

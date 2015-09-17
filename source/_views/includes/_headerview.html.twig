@@ -1,10 +1,10 @@
 <div class="slide" id="header-{{ counter }}" data-content="content-{{ counter }}">
   <div class="img-wrap"><img src="{{ post.backgroundimage }}" alt="img1"/></div>
   {% if counter > 1 %}
-    <a href="header-{{ counter - 1 }}" class="content-switch left" >left</a>
+    <a href="#header-{{ counter - 1 }}" class="content-switch left" >left</a>
   {% endif %}
   {% if counter < loop.length %}
-    <a href="header-{{ counter + 1 }}" class="content-switch right" >right</a>
+    <a href="#header-{{ counter + 1 }}" class="content-switch right" >right</a>
   {% endif %}
   <h2>{{ post.headermain }}<span>{{ post.headerlead }}</span></h2>
   <button class="content-switch">Read more</button>
