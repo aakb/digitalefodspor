@@ -11,6 +11,7 @@ $font-regular:    "permianseriftypefaceregular";
 $font-bold:       "permianseriftypefacebold";
 
 body {
+  background-color: rgba(0, 0, 0, .9);
   font: 1em/1.5 $font-regular, "Helvetica Neue", Helvetica, Arial, serif;
 }
 
@@ -21,8 +22,7 @@ body {
 
 
 .logo {
-  min-width: 300px;
-  max-width: 400px;
+  width: 300px;
 
   fill: #fff;
 }
@@ -45,12 +45,15 @@ button.content-switch::before {
   line-height: .35;
 }
 
+.dragslider h2 {
+  z-index: 99;
+}
+
 .dragslider h2 span {
   padding-top: 1em;
 }
 
 a.content-switch {
-
 
   &.left {
     z-index: 9999999;
@@ -60,4 +63,25 @@ a.content-switch {
     z-index: 9999999;
     right: 0;
   }
+}
+
+.img-wrap img {
+  opacity: 1;
+}
+
+.img-wrap::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 98;
+
+  content: "";
+
+  background-color: rgba(60, 60, 60, .6);
+}
+
+.img-dragger-small .slide h2 {
+  color: $white;
 }
