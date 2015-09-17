@@ -16,7 +16,8 @@ body {
 }
 
 .dragslider h2,
-.dragslider h2 span {
+.dragslider h2 span,
+.pages .content p {
   font-family: $font-regular;
 }
 
@@ -29,10 +30,13 @@ body {
 
 button.content-switch {
   border-radius: 100%;
-  height: 125px;
-  width: 125px;
+  height: 75px;
+  width: 75px;
 
   opacity: 1;
+  text-indent: 300%;
+
+  transition: all .25s;
 }
 
 button.content-switch:hover {
@@ -95,4 +99,28 @@ a.content-switch {
   .content-switch.right {
     display: none;
   }
+}
+
+
+// Move button after scroll and add background color
+
+.show-content .current button.content-switch {
+  margin-top: -4em;
+
+  border-color: $white;
+  color: $white;
+
+  &:hover {
+    border-color: $link-color;
+    color: $link-color;
+  }
+}
+
+.show-content .content-switch-background {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  height: 7.5em;
+  background-color: rgba(0, 0, 0, .9);
 }
