@@ -48,12 +48,6 @@ a:hover, a:focus {
 	transition: opacity 0.3s;
 }
 
-.message {
-	display: none;
-	clear: both;
-	color: #f39c12;
-}
-
 .codrops-header h1 {
 	margin: 0;
 	font-weight: 700;
@@ -187,9 +181,6 @@ a:hover, a:focus {
 }
 
 @media screen and (max-width: 650px) {
-	.message {
-		display: block;
-	}
 	.info span.info-keys,
 	.info span.info-switch {
 		display: none;
