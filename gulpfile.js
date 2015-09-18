@@ -26,7 +26,9 @@ browserSync.init({
 var jsPath = ['./js/*.js', './js/*.min.*'];
 var sassPath = './scss/**/*.scss';
 var htmlPath = './*.php'; //could also be twig files
-var outputPath = ['./output_dev', './output_prod'];
+var outputPath = './output_dev';
+var outputPathProd = './output_prod';
+
 
 var buildDir = './js';
 
@@ -53,6 +55,7 @@ gulp.task('sass', function () {
     }).on('error', sass.logError))
     .pipe(sourcemaps.write())
     .pipe(gulp.dest(outputPath + '/css'))
+    .pipe(gulp.dest(outputPathProd + '/css'))
   .pipe(browserSync.stream());
   //gulp.start('sculpin');
 });
