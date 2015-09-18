@@ -174,7 +174,7 @@ button.header-switch:hover {
 // Move button after scroll and add background color
 
 .show-content .current button.content-switch {
-  margin-top: -4em;
+  margin-top: -3.5em;
 
   border-color: $white;
   color: $white;
@@ -182,6 +182,10 @@ button.header-switch:hover {
   &:hover {
     border-color: $link-color;
     color: $link-color;
+  }
+
+  @include breakpoint($breakpoint-tablet) {
+    margin-top: -4em;
   }
 }
 
