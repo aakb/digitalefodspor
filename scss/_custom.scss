@@ -1,8 +1,8 @@
 /**
- *
- * Custom styling.
- *
- */
+*
+* Custom styling.
+*
+*/
 
 
 // Font overrides.
@@ -23,19 +23,31 @@ body {
 
 
 .logo {
-  width: 300px;
+  width: 125px;
   fill: $primary-color;
+
+  @include breakpoint($breakpoint-tablet) {
+  width: 300px;
+  }
+
 }
 
 button.content-switch {
   border-radius: 100%;
-  height: 75px;
-  width: 75px;
+  height: 60px;
+  width: 60px;
 
   opacity: 1;
-  text-indent: 300%;
+  text-indent: 700em;
 
   transition: all .25s;
+
+  @include breakpoint($breakpoint-tablet) {
+    height: 75px;
+    width: 75px;
+  }
+
+
 }
 
 button.content-switch:hover {
@@ -44,8 +56,14 @@ button.content-switch:hover {
 }
 
 button.content-switch::before {
-  font-size: 3em;
+  font-size: 2.3em;
   line-height: .35;
+
+  @include breakpoint($breakpoint-tablet) {
+    font-size: 3em;
+    width: 75px;
+  }
+
 }
 
 .dragslider h2 {
@@ -83,8 +101,8 @@ button.header-switch {
 
   position: absolute;
   top: 50%;
-  width: 75px;
-  height: 75px;
+  width: 30px;
+  height: 30px;
   z-index: 999;
 
   border: 0;
@@ -94,20 +112,34 @@ button.header-switch {
   border-radius: 100%;
   -webkit-font-smoothing: antialiased;
   overflow: hidden;
-  font-size: 0.85em;
+  font-size: 0.6em;
   text-indent: 50em;
 
+  @include breakpoint($breakpoint-tablet) {
+    font-size: 0.85em;
+    width: 40px;
+    height: 40px;
+  }
+
   &.left-button {
-    left: 2em;
+    left: .5em;
     -ms-transform: rotate(90deg); /* IE 9 */
     -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
     transform: rotate(90deg);
+
+    @include breakpoint($breakpoint-tablet) {
+      left: 2em;
+    }
   }
   &.right-button {
-    right: 2em;
+    right: .5em;
     -ms-transform: rotate(-90deg); /* IE 9 */
     -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
     transform: rotate(-90deg);
+
+    @include breakpoint($breakpoint-tablet) {
+      right: 2em;
+    }
   }
 }
 
@@ -123,7 +155,7 @@ button.header-switch::before {
   font-weight: 400;
   left: 0;
   text-indent: 0;
-    -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
 
 }
 
