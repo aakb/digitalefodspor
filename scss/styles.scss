@@ -3,7 +3,10 @@
  * Stylesheet import
  *
  */
+
+@import "base/_breakpoints";
 @import "base/_vars";
+
 
 @import "fonts/permianserif-regular";
 @import "fonts/permianserif-bold";
