@@ -27,7 +27,7 @@ body {
   fill: $primary-color;
 
   @include breakpoint($breakpoint-tablet) {
-  width: 300px;
+    width: 270px;
   }
 
 }
