@@ -26,7 +26,7 @@ browserSync.init({
 var jsPath = ['./js/*.js', './js/*.min.*'];
 var sassPath = './scss/**/*.scss';
 var htmlPath = './*.php'; //could also be twig files
-var outputPath = './output_dev';
+var outputPath = ['./output_dev', './output_prod'];
 
 var buildDir = './js';
 
