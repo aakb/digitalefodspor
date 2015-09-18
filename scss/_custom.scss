@@ -99,11 +99,15 @@ button.header-switch {
 
   &.left-button {
     left: 2em;
-     -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    transform: rotate(90deg);
   }
   &.right-button {
     right: 2em;
-    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg); /* IE 9 */
+    -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+    transform: rotate(-90deg);
   }
 }
 
