@@ -203,13 +203,14 @@ button.header-switch:hover {
 }
 
 .pages .content.show h2 {
+  padding-top: 3em;
+
   color: #000;
-  padding-top: 2em;
+  font-size: 2.25em;
 
   @include breakpoint($breakpoint-tablet) {
     padding-top: 2.25em;
     font-size: 5em;
-
   }
 
 
