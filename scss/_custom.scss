@@ -18,9 +18,9 @@ body {
 .dragslider h2,
 .dragslider h2 span,
 .pages .content p {
+
   font-family: $font-regular;
 }
-
 
 .logo {
   width: 125px;
@@ -156,7 +156,6 @@ button.header-switch::before {
   left: 0;
   text-indent: 0;
   -webkit-font-smoothing: antialiased;
-
 }
 
 button.header-switch:hover {
@@ -171,7 +170,6 @@ button.header-switch:hover {
     display: none;
   }
 }
-
 
 // Move button after scroll and add background color
 
@@ -192,6 +190,26 @@ button.header-switch:hover {
   top: 100%;
   right: 0;
   left: 0;
-  height: 7.5em;
+  height: 5.2em;
   background-color: rgba(0, 0, 0, .9);
+
+  @include breakpoint($breakpoint-tablet) {
+    height: 7.5em;
+  }
+}
+
+.pages .content.show h2 {
+  color: #000;
+  padding-top: 2em;
+
+  @include breakpoint($breakpoint-tablet) {
+    padding-top: 2.25em;
+    font-size: 5em;
+
+  }
+
+
+  span {
+
+  }
 }
