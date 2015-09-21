@@ -143,7 +143,6 @@
 					self.dd.setStep( self.slides.indexOf( slide ) + 1 );
 				}
 			} );
-
 			// reveal content
 			slide.querySelector( 'button.content-switch' ).addEventListener( 'click', function() { self._toggleContent( slide ); } );
 		} );
@@ -276,6 +275,11 @@
 		classie.remove( this.slides[ this.current || 0 ], 'current' );
 		this.current = this.dd.getStep()[0] - 1;
 		classie.add( this.slides[ this.current ], 'current' );
+
+
+		  var browserURL = $('.current').attr('id');
+			history.pushState(null, null, browserURL);
+
 	}
 
 	/**

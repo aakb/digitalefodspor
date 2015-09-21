@@ -524,6 +524,7 @@ Dragdealer.prototype = {
     }
     this.setTargetValue(target);
     this.wrapper.className = this.wrapper.className.replace(' ' + this.options.activeClass, '');
+
   },
   callAnimationCallback: function() {
     var value = this.value.current;
@@ -621,10 +622,8 @@ Dragdealer.prototype = {
   },
   setTargetValue: function(value, loose) {
     var target = loose ? this.getLooseValue(value) : this.getProperValue(value);
-
     this.groupCopy(this.value.target, target);
     this.offset.target = this.getOffsetsByRatios(target);
-
     this.callTargetCallback();
   },
   setTargetValueByOffset: function(offset, loose) {
@@ -844,7 +843,6 @@ function getPrefixedStylePropName(propName) {
     }
   }
 };
-
 return Dragdealer;
 
 }));
