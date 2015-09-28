@@ -3,29 +3,17 @@ $(document).ready(function () {
   if(hashValue.length>0) {
     var classNumber = 0;
     var widthTimes = 0;
-    switch (hashValue) {
-      case 'hvorn%C3%A5r':
-        classNumber = 1;
-        widthTimes = 0;
-          break;
-      case 'hvad':
-        classNumber = 2;
-        widthTimes = 1;
-          break;
-      case 'hvordan':
-        classNumber = 3;
-        widthTimes = 2;
-          break;
-      case 'hvor':
-        classNumber = 4;
-        widthTimes = 3;
-          break;
-      case 'hvem':
-        classNumber = 5;
-        widthTimes = 4;
-          break;
-      default:
-    }
+    var counter = 0;
+    elements = $(".slide");
+
+    elements.each(function()
+    {
+      if ($(this).attr('id') == hashValue){
+        classNumber = counter + 1;
+        widthTimes = counter;
+      }
+      counter++;
+    });
 
     $curContentDiv=$(".img-dragger div[data-content='content-"+ classNumber +"']");
     setTimeout(function(){

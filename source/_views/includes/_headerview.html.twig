@@ -1,4 +1,4 @@
-<div class="slide" id="#{{ post.headermain | url_encode | lower }}" data-content="content-{{ counter }}">
+<div class="slide" id="{{ post.headermain | url_encode | lower }}" data-content="content-{{ counter }}">
   <div class="img-wrap"><img src="{{ post.backgroundimage }}" alt="img1"/></div>
   {% if counter > 1 %}
     <button class="header-switch left-button">left</button>
