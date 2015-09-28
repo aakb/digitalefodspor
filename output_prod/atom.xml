@@ -3,13 +3,13 @@
     <title><![CDATA[Digitale fodspor]]></title>
     <link href="/atom.xml" rel="self"/>
     <link href="/"/>
-    <updated>2015-09-18T13:15:19+00:00</updated>
+    <updated>2015-09-28T08:06:37+00:00</updated>
     <id>/</id>
         <generator uri="http://sculpin.io/">Sculpin</generator>
             <entry>
             <title type="html"><![CDATA[]]></title>
             <link href="/_posts/frontpage"/>
-            <updated>2015-09-18T13:15:19+00:00</updated>
+            <updated>2015-09-28T08:06:37+00:00</updated>
             <id>/_posts/frontpage</id>
             <content type="html"><![CDATA[<p>@TODO mangler indhold</p>
 ]]></content>
@@ -17,7 +17,7 @@
             <entry>
             <title type="html"><![CDATA[]]></title>
             <link href="/_posts/sub1"/>
-            <updated>2015-09-18T13:15:19+00:00</updated>
+            <updated>2015-09-28T08:06:37+00:00</updated>
             <id>/_posts/sub1</id>
             <content type="html"><![CDATA[<p>@TODO mangler indhold</p>
 ]]></content>
@@ -25,7 +25,7 @@
             <entry>
             <title type="html"><![CDATA[]]></title>
             <link href="/_posts/sub2"/>
-            <updated>2015-09-18T13:15:19+00:00</updated>
+            <updated>2015-09-28T08:06:37+00:00</updated>
             <id>/_posts/sub2</id>
             <content type="html"><![CDATA[<p>@TODO mangler indhold</p>
 ]]></content>
@@ -33,7 +33,7 @@
             <entry>
             <title type="html"><![CDATA[]]></title>
             <link href="/_posts/sub3"/>
-            <updated>2015-09-18T13:15:19+00:00</updated>
+            <updated>2015-09-28T08:06:37+00:00</updated>
             <id>/_posts/sub3</id>
             <content type="html"><![CDATA[<p>@TODO mangler indhold</p>
 ]]></content>
@@ -41,7 +41,7 @@
             <entry>
             <title type="html"><![CDATA[]]></title>
             <link href="/_posts/sub4"/>
-            <updated>2015-09-18T13:15:19+00:00</updated>
+            <updated>2015-09-28T08:06:37+00:00</updated>
             <id>/_posts/sub4</id>
             <content type="html"><![CDATA[<p>@TODO mangler indhold</p>
 ]]></content>
