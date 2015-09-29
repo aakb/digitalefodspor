@@ -1,5 +1,5 @@
-$(document).ready(function () {
-  var hashValue = window.location.hash.substr(1);
+/*$(document).ready(function () {
+  var hashValue = window.location.hash.substr(2);
   if(hashValue.length>0) {
     var classNumber = 0;
     var widthTimes = 0;
@@ -8,7 +8,7 @@ $(document).ready(function () {
 
     elements.each(function()
     {
-      if ($(this).attr('id') == hashValue){
+      if ($(this).attr('id') === hashValue) {
         classNumber = counter + 1;
         widthTimes = counter;
       }
@@ -30,3 +30,4 @@ $(document).ready(function () {
     },100);
   }
 });
+*/

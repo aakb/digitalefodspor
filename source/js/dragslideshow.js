@@ -123,8 +123,41 @@
 
 		// init events
 		this._initEvents();
-	}
 
+		// Hack by jakobrindom
+
+		var hashValue = window.location.hash.substr(1);
+		if(hashValue.length>0) {
+
+			var handleIndex = -1;
+			var pageIndex = -1;
+			var i;
+
+
+			var elements = document.querySelectorAll('.pages .content');
+			for (i = 0; i < elements.length; i++) {
+				if ($(elements[i]).attr('id')===hashValue) {
+					pageIndex = i;
+					handleIndex = i;
+				}
+			}
+			if (handleIndex == -1) {
+				elements = document.querySelectorAll('.handle .slide');
+				for (i = 0; i < elements.length; i++) {
+					if ($(elements[i]).attr('id')===hashValue) {
+						handleIndex = i;
+					}
+				}
+			}
+
+			if (handleIndex > -1) {
+				self.dd.setStep(handleIndex + 1);
+				if (pageIndex > -1) {
+					self._toggleContent(this.slides[this.current]);
+				}
+			}
+		}
+	}
 	/**
 	* initialize the events
 	*/
@@ -226,6 +259,10 @@
 			this.dd.disable();
 			classie.add( this.el, 'show-content' );
 			classie.add( page, 'show' );
+
+			var browserURL = $('.show').attr('id');
+			history.pushState(null, null,'#' + browserURL);
+
 		}
 
 		var self = this,
@@ -236,6 +273,9 @@
 			}
 			if( self.isContent ) {
 				classie.remove( page, 'show' );
+				var browserURL = $('.current').attr('id');
+				history.pushState(null, null,'#' + browserURL);
+
 			}
 			self.isContent = !self.isContent;
 			self.isAnimating = false;
