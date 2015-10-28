@@ -1,4 +1,10 @@
 <div class="content" id="{{ post.headermain | url_encode | lower }}" data-content="content-{{ counter }}">
   <h2>{{ post.headermain }} <span>{{ post.headerlead }}</span></h2>
-  <p>{{ post.blocks.content|raw }}</p>
+  <div class="text">{{ post.blocks.content|raw }}</div>
+  <div class="content-media">
+    {% for m in post.media %}
+    <div class="mediatext">{{ post.mediatext[loop.index0]|raw }}</div>
+    <div class="media">{{ m|raw }}</div>
+    {% endfor %}
+  </div>
 </div>
