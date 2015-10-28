@@ -21,10 +21,8 @@ Vores ønske, at vi kan bidrage til at skabe en debat blandt de 15-17 årige om 
 digitale fodspor, som vi alle sætter online. Vi håber, at du bliver bevidst om, hvordan dine oplysninger bruges
 og nogle gange misbruges.
 
-
 Vi har talt med en række unge og hørt deres reaktioner og umiddelbare tanker om digitale fodspor. Vi har talt
 med eksperter og hørt deres bud på, hvordan du passer på dig selv, og så har vi samlet noget materiale,
 som vi mener,kunne være relevant for dig.
-
 
 Nedenstående partnere har været med til at lave projektet og kampagnen.

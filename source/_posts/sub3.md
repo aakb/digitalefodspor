@@ -9,9 +9,9 @@ kan gøre for at beskytte dig selv mere på nettet? Så er her samlet en liste o
 bøger og sites, som måske kunne være interessante for dig.
 
 
-### Facebook
+###Facebook
 
-#### Film:
+####Film:
 Ekurser.nu, Nicolai Sonne, 2015
 
 *Digitalt selvforsvar. Facebook*
@@ -19,7 +19,7 @@ Ekurser.nu, Nicolai Sonne, 2015
 [http://www.ekurser.nu/kursus/315](http://www.ekurser.nu/kursus/315)
 
 
-#### Artikler:
+####Artikler:
 Politiken, Torben Benner og Kim Faber, 2012
 
 *Privat er ikke privat på Facebook*
@@ -36,9 +36,9 @@ Mit digitale liv:
 [http://taenk.dk/gode-raad/hvem-ejer-dine-billeder-paa-facebook](http://taenk.dk/gode-raad/hvem-ejer-dine-billeder-paa-facebook)
 
 
-### Google
+###Google
 
-#### Film:
+####Film:
 
 Ekurser.nu, Nicolai Sonne, 2015
 
@@ -56,7 +56,7 @@ Sikker Chat
 [https://www.youtube.com/watch?v=SZyfWqSUpio](https://www.youtube.com/watch?v=SZyfWqSUpio)
 
 
-#### Artikler:
+####Artikler:
 
 Forbrugerrådet TÆNK, 2010
 
@@ -65,9 +65,9 @@ Forbrugerrådet TÆNK, 2010
 [http://taenk.dk/gode-raad/tema/google/google-ved-naesten-alt-ogsaa-om-dig](http://taenk.dk/gode-raad/tema/google/google-ved-naesten-alt-ogsaa-om-dig)
 
 
-### APPS
+###APPS
 
-#### Film:
+####Film:
 
 Ekurser.nu, Nicolai Sonne, 2015
 
@@ -76,7 +76,7 @@ Ekurser.nu, Nicolai Sonne, 2015
 [http://www.ekurser.nu/kursus/316](http://www.ekurser.nu/kursus/316)
 
 
-#### Artikler:
+####Artikler:
 
 Forbrugerrådet TÆNK,  David Hjuler Bergeon, 2014
 
@@ -87,9 +87,9 @@ Mit digitale liv:
 [http://taenk.dk/gode-raad/styr-dine-apps-paa-iphone-og-android](http://taenk.dk/gode-raad/styr-dine-apps-paa-iphone-og-android)
 
 
-### Mit Digitale Liv
+###Mit Digitale Liv
 
-#### Film:
+####Film:
 
 DR, Nicolai Franck, 2015
 
@@ -195,7 +195,7 @@ Forbrugerrådet TÆNK, 2014
 [http://taenk.dk/mit-digitale-liv](http://taenk.dk/mit-digitale-liv)
 
 
-#### Artikler:
+####Artikler:
 
 Ekstra Bladet Skole, Henrik Schou, 2011
 
@@ -215,7 +215,7 @@ En antologi om børn og unges onlineliv
 [http://bibliotek.dk/linkme.php?rec.id=870970-basis%3A29861854](http://bibliotek.dk/linkme.php?rec.id=870970-basis%3A29861854)
 
 
-#### Bøger:
+####Bøger:
 
 Frydenlund, Claus Petersen, Anders Skov, Jacob Brøndum, 2015
 
@@ -224,16 +224,16 @@ Frydenlund, Claus Petersen, Anders Skov, Jacob Brøndum, 2015
 [http://bibliotek.dk/linkme.php?rec.id=870970-basis%3A51656776](http://bibliotek.dk/linkme.php?rec.id=870970-basis%3A51656776)
 
 
-#### Sites:
+####Sites:
 
 Københavns Kommune, Kulturstyrelsen, Biblioteket Frederiksberg, Digital Dannelse:
 
 [www.digitale-dilemmaer.dk](www.digitale-dilemmaer.dk)
 
 
-### Privacy og sikkerhed på nettet
+###Privacy og sikkerhed på nettet
 
-#### Artikler:
+####Artikler:
 
 Forbrugerrådet TÆNK,  Emma Borello, 2015
 
@@ -267,7 +267,7 @@ Aarhus Kommune:
 [http://www.aarhus.dk/sitecore/content/Subsites/DigitaleBoernOgUnge/Home/Digital-dannelse.aspx?sc_lang=da](http://www.aarhus.dk/sitecore/content/Subsites/DigitaleBoernOgUnge/Home/Digital-dannelse.aspx?sc_lang=da)
 
 
-#### Bøger:
+####Bøger:
 
 Arbejdernes Landsbank,  Anders Skov, Jacob Brøndum, 2012
 
@@ -276,9 +276,9 @@ Arbejdernes Landsbank,  Anders Skov, Jacob Brøndum, 2012
 [http://bibliotek.dk/linkme.php?rec.id=870970-basis%3A29223483](http://bibliotek.dk/linkme.php?rec.id=870970-basis%3A29223483)
 
 
-### Overvågning på nettet
+###Overvågning på nettet
 
-#### Film:
+####Film:
 
 Forbrugerrådet TÆNK, 2015
 
