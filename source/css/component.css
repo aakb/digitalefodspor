@@ -402,7 +402,7 @@ button.content-switch::before {
 
 .pages .content a {
 	color: #3c89d5;
-	display: block;
+	display: inline-block;
 }
 
 .pages .content a:hover {

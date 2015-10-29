@@ -21,4 +21,4 @@ Hvis du bruger sociale medier, kan du ikke undgå at sætte digitale fodspor. De
 hvis du overvejer, hvad og hvordan du lægger ting på nettet og hvem, der kan se, hvad du lægger op.
 
 Denne hjemmeside er lavet for at give dig en mulighed for at reflektere over dine digitale fodspor. Du kan
-også følge os på [Facebook.com/digitalefodspor](https://facebook.com/digitalefodspor)
+også følge os på [https://facebook.com/digitalefodspor](https://facebook.com/digitalefodspor)

@@ -4,15 +4,14 @@ headermain: Hvem
 headerlead: Hvem er afsender på dette site?
 headersub: @TODO mangler indhold
 media:
-  - <img src="images/1.jpg" alt="Mountain View">
-  - <img src="images/2.jpg" alt="Mountain View">
-  - <img src="images/3.jpg" alt="Mountain View">
-  - <img src="images/4.jpg" alt="Mountain View">
-  - <img src="images/5.jpg" alt="Mountain View">
-  - <img src="images/6.jpg" alt="Mountain View">
-  - <img src="images/7.jpg" alt="Mountain View">
-  - <img src="images/8.jpg" alt="Mountain View">
-  - <img src="images/1.jpg" alt="Mountain View">
+  - <img src="images/logos/1.jpg" alt="Medierådet for børn og unge">
+  - <img src="images/logos/2.jpg" alt="Kulturstyrelsen">
+  - <img src="images/logos/3.png" alt="Mountain View">
+  - <img src="images/logos/4.jpg" alt="Mountain View">
+  - <img src="images/logos/5.png" alt="Mountain View">
+  - <img src="images/logos/6.png" alt="Mountain View">
+  - <img src="images/logos/7.png" alt="Mountain View">
+  - <img src="images/logos/9.png" alt="Mountain View">
 ---
 En række partnere er gået sammen om at lave denne kampagne om digitale fodspor. Det er vi, fordi vi mener, at det er vigtigt, at du får muligheden for at reflektere over dit liv på nettet.
 
