@@ -4,12 +4,12 @@ headermain: Hvordan
 headerlead: Hvordan kan jeg styre mine Digitale Fodspor?
 headersub: @TODO mangler indhold
 media:
-  - <iframe width="560" height="315" src="https://www.youtube.com/embed/OOmshdzmibI" frameborder="0" allowfullscreen></iframe>
-  - <iframe width="560" height="315" src="https://www.youtube.com/embed/GIujIG9jhqI" frameborder="0" allowfullscreen></iframe>
-  - <iframe width="560" height="315" src="https://www.youtube.com/embed/GYrj9tlZ3lU" frameborder="0" allowfullscreen></iframe>
-  - <iframe width="560" height="315" src="https://www.youtube.com/embed/nIdhjJ8Z52Q" frameborder="0" allowfullscreen></iframe>
-  - <iframe width="560" height="315" src="https://www.youtube.com/embed/_D79QEiI8oo" frameborder="0" allowfullscreen></iframe>
-  - <iframe width="560" height="315" src="https://www.youtube.com/embed/NeWmZVn_KUU" frameborder="0" allowfullscreen></iframe>
+  - <div class="videoWrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/OOmshdzmibI" frameborder="0" allowfullscreen></iframe></div>
+  - <div class="videoWrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/GIujIG9jhqI" frameborder="0" allowfullscreen></iframe></div>
+  - <div class="videoWrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/GYrj9tlZ3lU" frameborder="0" allowfullscreen></iframe></div>
+  - <div class="videoWrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/nIdhjJ8Z52Q" frameborder="0" allowfullscreen></iframe></div>
+  - <div class="videoWrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/_D79QEiI8oo" frameborder="0" allowfullscreen></iframe></div>
+  - <div class="videoWrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/NeWmZVn_KUU" frameborder="0" allowfullscreen></iframe></div>
 mediatext:
   - "Skal man altid fortælle sandheden på de sociale medier?"
   - "Er det ulovligt at kalde sig noget andet (have et alias) på Facebook?"

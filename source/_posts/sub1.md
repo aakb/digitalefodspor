@@ -3,7 +3,6 @@ backgroundimage: images/headerimages/side2.jpg
 headermain: Hvornår
 headerlead: Hvornår sætter jeg mine Digitale Fodspor?
 media:
-media:
   - <img src="images/statements/statements1.jpg" alt="Der er skræmmende, at Facebook tager alle dine oplysninger. Det kommer ikke som en overraskelse, men jeg synes alligevel, at det er chokerende, hvor meget de gemmer, selvom man sletter det.">
   - <img src="images/statements/statements2.jpg" alt="Vi har ytringsfrihed, det vil jeg benytte mig af.">
   - <img src="images/statements/statements3.jpg" alt="Jeg har aldrig tænkt over, at Google overvåger mig, men jeg har undret mig over, at de sneakers, jeg lige havde googlet, pludseligt dukkede op på YouTube.">
