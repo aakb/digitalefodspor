@@ -1,54 +1,53 @@
-//override component.css
+// Sub content wrapper
 .pages .content {
-	background: #dfe3e3;
+	background: $grey-background;
 	text-align: center;
-	color: #545b61;
+	color: $sub-content-text-color;
 	font-size: 1.5em;
-}
-//override component.css
-.pages .content p, h3, h4 {
-	max-width: 1100px;
-	padding: 0;
-	line-height: 1.5;
-	padding-bottom: 1.5em;
-	text-align: left;
-	font-family: 'Book Antiqua', Palatino, 'Palatino Linotype', 'Palatino LT STD', Georgia, serif;
+	padding-bottom: 5em;
 }
 
-.pages .content h3, h4 {
-	padding: 0;
-	margin: 0;
 
-}
-//override component.css
-.pages .content p:last-child {
-	padding: 0;
-	padding-bottom: 1.5em;
-	text-align: left;
-	font-weight: normal;
-}
-
-.content-media {
+// Override default styling for html elements.
+.pages .content-media {
 	max-width: 1100px;
 	margin: 0 auto;
 	padding: 0.5em 2em;
 	text-align: left;
 
-	img {
-		width: 100%;
-		min-width: 300px;
-		padding: 0.2em;
-		float:left;
-		@include breakpoint($breakpoint-tablet) {
-			width: 50%;
+	h3, h4 {
+		padding: 0;
+		margin: 0;
+		line-height: 1.5;
+		text-align: left;
+		font-family: 'Book Antiqua', Palatino, 'Palatino Linotype', 'Palatino LT STD', Georgia, serif;
+	}
+
+	p {
+		padding: 0 0 1.5em;
+
+		&:last-child {
+			padding: 0 0 1.5em;
+			text-align: left;
+			font-weight: normal;
 		}
 	}
+
+	a {
+		@include word-wrap();
+	}
+
+	.content-meta {
+		overflow: hidden;
+	}
+
 	.videoWrapper {
 		padding-bottom: 56.25%; /* 16:9 */
 		padding-top: 25px;
 		height: 0;
 		position: relative;
 	}
+
 	.videoWrapper iframe {
 		top: 0;
 		left: 0;
@@ -56,29 +55,48 @@
 		height: 100%;
 		position: absolute;
 	}
-}
-.mediatext {
-	padding-top: 2.5em;
-	padding-bottom: 1.5em;
-	text-align: center;
-	font-family: 'Book Antiqua', Palatino, 'Palatino Linotype', 'Palatino LT STD', Georgia, serif;
-	font-weight: bold;
+
+	.mediatext {
+		padding-top: 2.5em;
+		padding-bottom: 1.5em;
+		text-align: center;
+		font-family: 'Book Antiqua', Palatino, 'Palatino Linotype', 'Palatino LT STD', Georgia, serif;
+		font-weight: bold;
+	}
 }
 
-.pages .content:last-child { /* gets last page */
-	.content-meta {
-		@include flexbox;
-		@include flex-flow(row wrap);
-		@include justify-content(center);
+// Specific styling for all media elements except #hvordan page.
+.pages .content:not(#hvordan) .media {
+	width: 50%;
+	min-width: 300px;
+	padding: 0.2em;
+	float:left;
+
+	@include breakpoint($breakpoint-tablet) {
+		width: 50%;
 	}
+
+	img {
+		width: 100%;
+	}
+}
+
+// Specific styling for media on #hvem page.
+.pages #hvem .content-meta {
+	@include flexbox;
+	@include flex-flow(row wrap);
+	@include justify-content(center);
+
 	.media {
+		background-color: white;
 		margin: 0.1em;
+
 		@include flexbox;
 		@include flex-flow(column);
 		@include flex-basis(100%);
 		@include justify-content(center);
 		@include flex-shrink(1);
-		background-color: white;
+
 
 		@include breakpoint($breakpoint-tablet) {
 			@include flex-basis(48.8%);
@@ -87,14 +105,14 @@
 			@include flex-basis(32.7%);
 		}
 	}
-	img {
 
+	img {
 		display: block;
 		margin-top: 1.25em;
 		margin-right: auto;
 		margin-left: auto;
 		margin-bottom: 1em;
-		max-width: 25%;
+
 		@include flexbox;
 	}
 }
