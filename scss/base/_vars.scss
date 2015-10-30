@@ -8,42 +8,41 @@
 /* Breakpoints
    ================================================================================================================== */
 
-
-$breakpoint-lap:              481px;
-$breakpoint-lap-big:          581px;
 $breakpoint-tablet:           720px;
 $breakpoint-desk:             1024px;
-$breakpoint-bigscreen:        1200px;
-
-
-/* Layout
-   ================================================================================================================== */
-
-$layout-max-width:            62.5em;
-$border-radius:               .6em !default;
-
-
-/* Elements
-   ================================================================================================================== */
-
-$nav-height:  80px;
-
 
 /* Colors
    ================================================================================================================== */
 
-$black:            #000;
-$white:            #fff;
-$primary-color:    #ffd400;
-$link-color:       $primary-color;
-$link-color-hover: lighten($primary-color, 10%);
-$grey-border:      #D8D8D8;
+$black:                    #000;
+$white:                    #fff;
+$primary-color:            #ffd400;
+$link-color:               $primary-color;
+$link-color-hover:         lighten($primary-color, 10%);
+$grey-border:              #D8D8D8;
+$grey-background:          #dfe3e3;
+$sub-content-text-color:   #545b61;
 
 
 /* Typography
    ================================================================================================================== */
 
-$font-family:      "Cabin Sketch", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$font:             1em/1.5 $font-family;
+$font-regular:    "permianseriftypefaceregular", serif;
+$font-bold:       "permianseriftypefacebold";
+$font:             1em/1.5 "permianseriftypefaceregular";
 
 
+
+
+/* Mixins
+   ================================================================================================================== */
+@mixin word-wrap() {
+   overflow-wrap: break-word;
+   word-wrap: break-word;
+   -ms-word-break: break-all;
+   word-break: break-word;
+   -ms-hyphens: auto;
+   -moz-hyphens: auto;
+   -webkit-hyphens: auto;
+   hyphens: auto;
+}
