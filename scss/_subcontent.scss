@@ -73,29 +73,41 @@
 
 .pages .content:last-child { /* gets last page */
   .content-meta {
-  display: flex;
-  flex-wrap: wrap;
-  align-content: flex-start;
-  flex-flow: row wrap;
-  //justify-content: center;
-  //   align-items: flex-start;
-    //width: 100%;
-    background-color: blue;
+  @include flexbox;
+  @include flex-flow(row wrap);
+  @include justify-content(center);
+
+
+  
   }
 
   .media {
-    width: 33.3%;
-    background-color: yellow;
+    margin: 0.1em;
 
+  @include flexbox;
+  @include flex-flow(column);
+  @include flex-basis(100%);
+  @include justify-content(center);
+    background-color: white;
+  @include flex-shrink(1);
+
+	@include breakpoint($breakpoint-tablet) {
+		  @include flex-basis(48.8%);
+	}
+	@include breakpoint($breakpoint-desk) {
+
+      @include flex-basis(32.7%);
+    }
   }
   img {
-    background-color: cornflowerblue;
-    margin: 10px;
-    //flex-shrink:1;
-    //flex-basis: 33%;
-    //display: inline;
-    //height: auto;
-    max-width: 33%;
+
+    display: block;
+        margin-top: 1.25em;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 1em;
+        max-width: 25%;
+  @include flexbox;
 
     //vertical-align: bottom;
   }

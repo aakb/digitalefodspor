@@ -374,7 +374,9 @@ button.content-switch::before {
 }
 
 .js .pages .content h2,
-.js .pages .content p {
+.js .pages .content p,
+.js .pages .content h3,
+.js .pages .content h4  {
 	-webkit-transform: translate3d(0,200px,0);
 	transform: translate3d(0,200px,0);
 	-webkit-transition-property: opacity;
@@ -386,7 +388,9 @@ button.content-switch::before {
 }
 
 .pages .content.show h2,
-.pages .content.show p {
+.pages .content.show p,
+.pages .content.show h3,
+.pages .content.show h4 {
 	-webkit-transition-duration: 1s;
 	transition-duration: 1s;
 	-webkit-transition-property: -webkit-transform, opacity;
@@ -395,7 +399,9 @@ button.content-switch::before {
 	transform: translate3d(0,0,0);
 }
 
-.pages .content.show p {
+.pages .content.show p,
+.pages .content.show h3,
+.pages .content.show h4  {
 	-webkit-transition-delay: 0.1s;
 	transition-delay: 0.1s;
 }
