@@ -6,12 +6,12 @@ headersub: @TODO mangler indhold
 media:
   - <img src="images/logos/1.jpg" alt="Medierådet for børn og unge">
   - <img src="images/logos/2.jpg" alt="Kulturstyrelsen">
-  - <img src="images/logos/3.png" alt="Mountain View">
-  - <img src="images/logos/4.jpg" alt="Mountain View">
-  - <img src="images/logos/5.png" alt="Mountain View">
-  - <img src="images/logos/6.png" alt="Mountain View">
-  - <img src="images/logos/7.png" alt="Mountain View">
-  - <img src="images/logos/9.png" alt="Mountain View">
+  - <img src="images/logos/3.png" alt="Aarhus Kommune">
+  - <img src="images/logos/4.jpg" alt="Københavns kommunes Biblioteker">
+  - <img src="images/logos/5.png" alt="Samfinansieret af denn Europæiske Union">
+  - <img src="images/logos/6.png" alt="Center for læring, Børn og Unge, Aarhus Kommune">
+  - <img src="images/logos/7.png" alt="Slagelse Bibliotekerne">
+  - <img src="images/logos/9.png" alt="DOKK1">
 ---
 En række partnere er gået sammen om at lave denne kampagne om digitale fodspor. Det er vi, fordi vi mener, at det er vigtigt, at du får muligheden for at reflektere over dit liv på nettet.
 

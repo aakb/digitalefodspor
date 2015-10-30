@@ -2,7 +2,6 @@
 backgroundimage: images/headerimages/side1.jpg
 headermain: Hvad
 headerlead: Hvad er digitale fodspor?
-headersub: @TODO mangler indhold
 ---
 Hver gang du bevæger dig rundt på nettet, efterlader du en række aftryk. Det sker både, når du lægger
 billeder på Facebook, benytter Snapchat eller søger i Google. Hver gang du åbner en internetbrower,

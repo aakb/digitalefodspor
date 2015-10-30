@@ -2,7 +2,6 @@
 backgroundimage: images/headerimages/side4.jpg
 headermain: Hvor
 headerlead: Hvor finder jeg mere om Digitale Fodspor?
-headersub: @TODO mangler indhold
 ---
 Vil du gerne vide mere om dine digitale fodspor? Hvornår du sætter dem, hvad de bliver brugt til og hvad du
 kan gøre for at beskytte dig selv mere på nettet? Så er her samlet en liste over nogle af de film, artikler,
