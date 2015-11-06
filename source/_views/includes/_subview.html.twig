@@ -9,6 +9,9 @@
       {% endif %}
       <div class="media">{{ m|raw }}</div>
       {% endfor %}
+        {% if post.who %}
+        <div class="mediaraadet">{{ post.who|raw }}</div>
+        {% endif %}
     </div>
   </div>
 </div>

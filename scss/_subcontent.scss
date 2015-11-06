@@ -87,6 +87,8 @@
 	@include flex-flow(row wrap);
 	@include justify-content(center);
 
+
+
 	.media {
 		background-color: white;
 		margin: 0.1em;
@@ -108,11 +110,28 @@
 
 	img {
 		display: block;
-		margin-top: 1.25em;
+		margin-top: .1em;
 		margin-right: auto;
 		margin-left: auto;
-		margin-bottom: 1em;
+		//margin-bottom: 1em;
+		padding: 1.5em;
+
 
 		@include flexbox;
 	}
+
+	.mediaraadet {
+		display: inline-block;
+		padding-top: 3em;
+
+		img{
+			max-width: 33%;
+			padding: 0;
+			vertical-align: middle;
+			display: inline-block;
+
+		}
+
+	}
+
 }
