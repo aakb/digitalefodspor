@@ -87,8 +87,6 @@
 	@include flex-flow(row wrap);
 	@include justify-content(center);
 
-
-
 	.media {
 		background-color: white;
 		margin: 0.1em;
@@ -98,7 +96,6 @@
 		@include flex-basis(100%);
 		@include justify-content(center);
 		@include flex-shrink(1);
-
 
 		@include breakpoint($breakpoint-tablet) {
 			@include flex-basis(48.8%);
@@ -111,27 +108,33 @@
 	img {
 		display: block;
 		margin-top: .1em;
-		margin-right: auto;
-		margin-left: auto;
-		//margin-bottom: 1em;
 		padding: 1.5em;
-
-
-		@include flexbox;
 	}
 
+	// Specific styling for mediaraadet on #hvem page.
 	.mediaraadet {
 		display: inline-block;
-		padding-top: 3em;
+		margin-top: 1em;
+		text-align: center;
+		width: 99.7%;
+		background-color: white;
 
+		@include breakpoint($breakpoint-tablet) {
+			width: 98.2%;
+		}
+		@include breakpoint($breakpoint-desk) {
+			width: 65.8%;
+		}
 		img{
 			max-width: 33%;
+			min-width: 75%;
 			padding: 0;
 			vertical-align: middle;
 			display: inline-block;
 
+			@include breakpoint($breakpoint-tablet) {
+				min-width: 50%;
+			}
 		}
-
 	}
-
 }
