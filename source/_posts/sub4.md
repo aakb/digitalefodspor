@@ -12,7 +12,7 @@ media:
   - <img src="images/logos/6.png" alt="DOKK1">
   - <img src="images/logos/7.png" alt="Center for læring, Børn og Unge, Aarhus Kommune">
   - <img src="images/logos/8.png" alt="Elise Smiths Skole">
-who: Mediarådet er støttet af  <img src="images/logos/9.png" alt="Samfinansieret af denn Europæiske Union">  
+who: Medierådet er støttet af:  <img src="images/logos/9.png" alt="Samfinansieret af denn Europæiske Union">  
 ---
 En række partnere er gået sammen om at lave denne kampagne om digitale fodspor. Vi mener, at det er vigtigt, at du får muligheden for at reflektere over dit liv på nettet.
 
