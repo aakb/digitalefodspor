@@ -2,37 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc></loc>
-    <lastmod>2015-11-11</lastmod>
+    <lastmod>2016-03-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
     <url>
     <loc>/_posts/frontpage</loc>
-    <lastmod>2015-11-11T08:15:16+00:00</lastmod>
+    <lastmod>2016-03-01T15:11:39+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
     <url>
     <loc>/_posts/sub1</loc>
-    <lastmod>2015-11-11T08:15:16+00:00</lastmod>
+    <lastmod>2016-03-01T15:11:39+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
     <url>
     <loc>/_posts/sub2</loc>
-    <lastmod>2015-11-11T08:15:16+00:00</lastmod>
+    <lastmod>2016-03-01T15:11:39+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
     <url>
     <loc>/_posts/sub3</loc>
-    <lastmod>2015-11-11T08:15:16+00:00</lastmod>
+    <lastmod>2016-03-01T15:11:39+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
     <url>
     <loc>/_posts/sub4</loc>
-    <lastmod>2015-11-11T08:15:16+00:00</lastmod>
+    <lastmod>2016-03-01T15:11:39+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>

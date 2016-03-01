@@ -86,26 +86,24 @@
 	@include flex-flow(row wrap);
 	@include justify-content(center);
 
+
 	.media {
 		background-color: white;
 		margin: 0.1em;
-
 		@include flexbox;
-		@include flex-flow(column);
-		@include flex-basis(100%);
-		@include justify-content(center);
-		@include flex-shrink(1);
+		@include align-items(center);
 
 		@include breakpoint($breakpoint-tablet) {
 			@include flex-basis(48.8%);
 		}
 		@include breakpoint($breakpoint-desk) {
+
 			@include flex-basis(32.7%);
 		}
 	}
 
 	img {
-		display: block;
+		display: inline-block;
 		margin-top: .1em;
 		padding: 1.5em;
 	}

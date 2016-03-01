@@ -21,3 +21,6 @@ Vores ønske er at skabe en debat blandt de 15-17 årige om privatliv på nettet
 
 
 Digitale Fodspor er et projektsamarbejde mellem Aarhus Kommunes Biblioteker og Medierådet for Børn og Unge og er støttet af Kulturstyrelsen. En række andre organisationer har bidraget til projektet.
+
+
+Se projektrapporten her: <a href="https://www.dropbox.com/sh/usm69fmyvjyvtac/AABWHXdP9OqxE2igjA0_nppza?dl=0">Projektrapport</a>
